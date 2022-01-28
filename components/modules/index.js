@@ -7,7 +7,6 @@ const Marquee = dynamic(() => import('./marquee'))
 const DividerPhoto = dynamic(() => import('./divider-photo'))
 const ProductHero = dynamic(() => import('./product-hero'))
 const Collection = dynamic(() => import('./collection-grid'))
-const TextImageCta = dynamic(() => import('./text-image-cta'))
 
 export const Module = ({
   index,
@@ -44,9 +43,6 @@ export const Module = ({
           data={{ ...module, products: collectionProducts }}
         />
       )
-    case 'textImageCta':
-      return <TextImageCta index={index} data={module} />
-
     default:
       return null
   }

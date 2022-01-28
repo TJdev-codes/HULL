@@ -1,7 +1,7 @@
 {
   "root": true,
   "api": {
-    "projectId": "mfer09ry",
+    "projectId": "ieasd5lg",
     "dataset": "production"
   },
   "project": {
@@ -21,9 +21,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
