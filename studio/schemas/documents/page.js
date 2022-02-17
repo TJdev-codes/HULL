@@ -48,7 +48,7 @@ export default {
         { type: 'hero' },
         { type: 'marquee' },
         { type: 'dividerPhoto' },
-        { type: 'textImageCta'},
+        { type: 'textImageCta' },
         {
           title: 'Reusable Section',
           type: 'reference',

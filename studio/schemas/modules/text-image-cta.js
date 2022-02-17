@@ -21,35 +21,10 @@ export default {
       title: 'Excerpt'
     },
     {
-      title: 'Background Type',
-      name: 'bgType',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Photo', value: 'photo' },
-          { title: 'Video', value: 'video' }
-        ],
-        layout: 'radio',
-        direction: 'horizontal'
-      },
+      title: 'Image',
+      name: 'image',
+      type: 'image',
       validation: Rule => Rule.required()
-    },
-    {
-      name: 'photos',
-      type: 'object',
-      fields: [
-        customImage({
-          title: 'Background Photo (mobile)',
-          name: 'mobilePhoto'
-        }),
-        customImage({
-          title: 'Background Photo (desktop)',
-          name: 'desktopPhoto'
-        })
-      ],
-      hidden: ({ parent }) => {
-        return parent.bgType !== 'photo'
-      }
     },
     {
       name: 'cta',
@@ -59,12 +34,12 @@ export default {
         {
           name: 'linkText',
           type: 'string',
-          title: 'Link Text',
+          title: 'Link Text'
         },
         {
           name: 'url',
           type: 'url',
-          title: 'URL',
+          title: 'URL'
         }
       ]
     }

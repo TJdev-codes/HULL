@@ -171,22 +171,14 @@ export const modules = `
       }
     }
   },
-  _type == 'textImageCta' => {
+    _type == 'textImageCta' => {
     _type,
     _key,
     heading,
     tagline,
     excerpt,
     bgType,
-    photos{
-      ...,
-      mobilePhoto{
-        ${imageMeta}
-      },
-      desktopPhoto{
-        ${imageMeta}
-      }
-    },
+    "image": image.asset->url,
     cta,
   },
   _type == 'hero' => {

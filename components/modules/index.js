@@ -46,7 +46,6 @@ export const Module = ({
       )
     case 'textImageCta':
       return <TextImageCta index={index} data={module} />
-
     default:
       return null
   }
