@@ -28,7 +28,7 @@ import dividerPhoto from './modules/divider-photo'
 import newsletter from './modules/newsletter'
 import productHero from './modules/product-hero'
 import collectionGrid from './modules/collection-grid'
-
+import textImageCta from './modules/text-image-cta'
 // Object types
 import gridColumn from './objects/grid-column'
 import gridSize from './objects/grid-size'
@@ -97,7 +97,7 @@ export default createSchema({
     newsletter,
     productHero,
     collectionGrid,
-
+    textImageCta,
     /* ----------------------- */
     /* 3: Generic Object types */
     gridColumn,

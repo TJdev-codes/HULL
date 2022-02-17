@@ -171,6 +171,16 @@ export const modules = `
       }
     }
   },
+    _type == 'textImageCta' => {
+    _type,
+    _key,
+    heading,
+    tagline,
+    excerpt,
+    bgType,
+    "image": image.asset->url,
+    cta,
+  },
   _type == 'hero' => {
     _type,
     _key,
